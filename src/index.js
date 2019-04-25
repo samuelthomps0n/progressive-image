@@ -92,6 +92,7 @@ class Progressive {
     if(this.scale) {
       img.className = 'origin-scale'
     }
+    img.alt = item.alt;
     item.classList.remove('lazy')
     img.onload = _ => {
       this.mountImage(item, img)
